@@ -1,0 +1,45 @@
+Proyecto de Waire versión pre-2.0
+-----------------------------
+Programa para manejo de frecuencias, orientado hacia uso por empresas privadas
+de telecomunicaciones así como por proyectos comunitarios y de atención a zona
+de desastres.
+Versión anterior disponible en http://sourceforge.net/projects/waire/
+
+Objetivos
+---------
+- Diagramar nodos, y access points con su señal inalámbrica representada por el
+  radio, alcance y frecuencia
+- Diagramar subscriber units
+- Capacidad de encontrar y recomendar APs 
+- Capacidad de sugerir frecuencias de manera que se eviten las colisiones entre
+  nodos
+- Funcionar tanto para radios de cliente como de backbone. Se deben poder
+  separar las capas de los diferentes radios, ordenados por frecuencia.
+- Sitio web de ejemplo, así como capturas de pantalla
+
+Diseño en bosquejo
+------------------
+- Un frame con dojo, y dentro del frame el mapa de Openstreetmaps.
+- Openlayers utilizando "behavior fixed http" y capa superpuesta en GML.
+- Si fuera necesario agregarle funciones al mapa, como localizar puntos, creo
+  que se hace con el mismo OpenLayers.
+- Base de datos PostgreSQL para almacenar información de Radios, nodos y
+  clientes
+- Daemon programado en Perl (Geo::GML) para sacar la información de la BD y
+  la interfaz de waire
+
+Funciones futuras
+-----------------
+Para decidir entre el orden de prioridad de las tareas, así como para solicitar
+ideas frescas, se debe consultar con la comunidad así como con las empresas
+privadas que se conozca utilizan Waire.
+- Mapa de Google en lugar de OSM
+- Agregar capas de ordenamiento, como lo podrían ser marca, industria de cliente
+  (e.g. Sportbook), SLA, cantidad de tiquetes, disponibilidad.
+- Activar permanent links de OpenLayers para que los enlaces puedan ser
+  compartidos fácilmente
+- Integración con sistema de monitoreo
+- Integración con sistema de tiquetes de manera que se pueda visualizar áreas
+  con problemas frequentes
+- Aplicación para Android que permita marcar puntos, y reprogramar radios en el
+  campo

@@ -1,0 +1,33 @@
+<City xsi:schemaLocation="http://www.ibbb.org City.xsd">
+    <gml:boundedBy>
+        <gml:Envelope>
+            <gml:pos>100 200</gml:pos>
+            <gml:pos>230 250</gml:pos>
+        </gml:Envelope>
+    </gml:boundedBy>
+    <gml:featureMember>
+        <Bridge gml:id="bridge 1">
+            <span>100</span>
+            <height>200</height>
+            <gml:centerLineOf>
+                <gml:LineString gml:id="line 24">
+                    <gml:pos>100 200</gml:pos>
+                    <gml:pos>200 200</gml:pos>
+                </gml:LineString>
+            </gml:centerLineOf>
+        </Bridge>
+    </gml:featureMember>
+    <gml:featureMember>
+        <Bridge gml:id="bridge 2">
+            <span>100</span>
+            <height>200</height>
+            <gml:centerLineOf>
+                <gml:LineString gml:id="line 3">
+                    <gml:pos>130 250</gml:pos>
+                    <gml:pos>230 250</gml:pos>
+                </gml:LineString>
+            </gml:centerLineOf>
+        </Bridge>
+    </gml:featureMember>
+</City>
+
