@@ -7,6 +7,8 @@ Versión anterior disponible en http://sourceforge.net/projects/waire/
 
 Objetivos
 ---------
+- Activar permanent links de OpenLayers para que los enlaces puedan ser
+  compartidos fácilmente
 - Diagramar nodos, y access points con su señal inalámbrica representada por el
   radio, alcance y frecuencia
 - Diagramar subscriber units
@@ -36,8 +38,6 @@ privadas que se conozca utilizan Waire.
 - Mapa de Google en lugar de OSM
 - Agregar capas de ordenamiento, como lo podrían ser marca, industria de cliente
   (e.g. Sportbook), SLA, cantidad de tiquetes, disponibilidad.
-- Activar permanent links de OpenLayers para que los enlaces puedan ser
-  compartidos fácilmente
 - Integración con sistema de monitoreo
 - Integración con sistema de tiquetes de manera que se pueda visualizar áreas
   con problemas frequentes
